@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek & Destroy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app-container">
+        <section id="start-screen" class="screen active">
+            <img src="https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/LogoApp.png" alt="Geek & Destroy Logo" class="logo">
+            <p class="start-text">Empezar</p>
+        </section>
+        <section id="category-screen" class="screen">
+            <h1>Escoge tu categoría</h1>
+            <div class="category-grid">
+                <div class="category-item" data-category="trabajo"><img src="https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoTrabajo.png" alt="Trabajo"><span>Trabajo</span></div>
+                <div class="category-item" data-category="personal"><img src="https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoVidaPersonal.png" alt="Vida Personal"><span>Vida personal</span></div>
+                <div class="category-item" data-category="gustos"><img src="https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoGustos.png" alt="Gustos"><span>Gustos</span></div>
+            </div>
+        </section>
+        <section id="question-screen" class="screen">
+            <div class="question-content">
+                <img id="question-icon" src="" alt="Category Icon"><p id="question-text"></p><img id="back-button" src="https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoBack.png" alt="Regresar">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
