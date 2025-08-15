@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geek-destroy-cache-v7'; // Subimos la versión
+const CACHE_NAME = 'geek-destroy-cache-v8'; // Subimos la versión
 const urlsToCache = [
   './',
   './index.html',
