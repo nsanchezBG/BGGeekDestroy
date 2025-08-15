@@ -1,8 +1,8 @@
 {
   "name": "Geek & Destroy",
   "short_name": "G&D",
-  "start_url": ".",
   "display": "standalone",
+  "start_url": "/?standalone=true",
   "background_color": "#ffffff",
   "theme_color": "#333333",
   "orientation": "portrait",
