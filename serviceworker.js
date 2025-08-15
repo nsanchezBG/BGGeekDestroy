@@ -1,18 +1,21 @@
-const CACHE_NAME = 'geek-destroy-cache-v4';
+const CACHE_NAME = 'geek-destroy-cache-v5'; // Subimos la versión
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  'https://fonts.googleapis.com/css2?family=Young+Serif&display=swap',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/LogoApp.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoTrabajo.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoVidaPersonal.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoGustos.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoTrabajoInner.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoVidaPersonalInner.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoGustosInner.png',
-  'https://raw.githubusercontent.com/nsanchezBG/BGGeekDestroy/main/IconoBack.png'
+  './', // La página principal
+  './index.html',
+  './style.css',
+  './script.js',
+  './manifest.json',
+  // Rutas relativas para las imágenes
+  './LogoApp.png',
+  './IconoTrabajo.png',
+  './IconoVidaPersonal.png',
+  './IconoGustos.png',
+  './IconoTrabajoInner.png',
+  './IconoVidaPersonalInner.png',
+  './IconoGustosInner.png',
+  './IconoBack.png',
+  // La fuente de Google
+  'https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'
 ];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(urlsToCache))));
 self.addEventListener('fetch', e => e.respondWith(caches.match(e.request).then(res => res || fetch(e.request))));
