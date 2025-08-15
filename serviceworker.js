@@ -1,11 +1,11 @@
-const CACHE_NAME = 'geek-destroy-cache-v5'; // Subimos la versión
+const CACHE_NAME = 'geek-destroy-cache-v6'; // Subimos la versión de nuevo
 const urlsToCache = [
-  './', // La página principal
+  './',
   './index.html',
   './style.css',
   './script.js',
   './manifest.json',
-  // Rutas relativas para las imágenes
+  './questions.json', // ¡AÑADIDO IMPORTANTE!
   './LogoApp.png',
   './IconoTrabajo.png',
   './IconoVidaPersonal.png',
@@ -14,7 +14,6 @@ const urlsToCache = [
   './IconoVidaPersonalInner.png',
   './IconoGustosInner.png',
   './IconoBack.png',
-  // La fuente de Google
   'https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'
 ];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(urlsToCache))));
