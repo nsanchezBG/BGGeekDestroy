@@ -7,7 +7,7 @@
     --color-text-light: #fff;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 100%; height: 100%; font-family: var(--font-main); overflow: hidden; background-color: #fff; }
+html, body { width: 100%; height: 100%; font-family: var(--font-main); overflow: hidden; background-color: var(--color-trabajo); }
 #app-container { position: relative; width: 100%; height: 100%; }
 .screen { position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; text-align: center; opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out, visibility 0.5s; z-index: 1; }
 .screen.active { opacity: 1; visibility: visible; z-index: 10; }
